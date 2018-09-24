@@ -20,7 +20,9 @@ ff48140a76fb        checksumcheck_default   bridge              local
 ```
 
 Introduce corruption:
-  tc qdisc add dev br-ff48140a76fb root netem corrupt 100.0%
+  
+    tc qdisc add dev br-ff48140a76fb root netem corrupt 100.0%
 
 And of course, remove it again:
-  tc qdisc del dev br-ff48140a76fb root netem corrupt 100.0%
+  
+    tc qdisc del dev br-ff48140a76fb root netem corrupt 100.0%
